@@ -16,17 +16,17 @@ class HttpExperiment extends Component {
             body: 'bar',
             userId: 1
         }
-        post(`${END_POINT}/posts`, body).then(function (json) {
+        post(`${END_POINT}/posts`, body).then(json => {
             AlertIOS.alert(JSON.stringify(json));
-        }).catch(function (error) {
+        }).catch(error => {
             console.error(error.msg);
         });
     };
 
     onPressGetButton = () => {
-        get(`${END_POINT}/posts/1`).then(function (json) {
+        get(`${END_POINT}/posts/1`).then(json => {
             AlertIOS.alert(JSON.stringify(json));
-        }).catch(function (error) {
+        }).catch(error => {
             console.error(error.msg);
         });
     };
@@ -36,12 +36,12 @@ class HttpExperiment extends Component {
         return (
             <View style={{ flex: 1, padding: 10 }}>
 
-<Button
-onPress={this.onPressPostButton}
-title='Http Post'
-/>
+                <Button
+                    onPress={this.onPressPostButton}
+                    title='Http Post'
+                />
 
-<Button
+                <Button
                     onPress={this.onPressGetButton}
                     title='Http Get'
                 />
