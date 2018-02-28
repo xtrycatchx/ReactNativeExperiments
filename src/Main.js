@@ -11,6 +11,10 @@ class Main extends Component {
         super(props);
     }
 
+    onPressHttpExperimentButton = () => {
+        this.props.navigation.navigate("HttpExperiment", {})
+    };
+
     onPressPromiseExperimentButton = () => {
         this.props.navigation.navigate("PromiseExperiment", {})
     };
@@ -18,6 +22,10 @@ class Main extends Component {
     render() {
         return (
             <View style={{ flex: 1, padding: 10 }}>
+                <Button
+                    onPress={this.onPressHttpExperimentButton}
+                    title="Http Experiment"
+                />
                 <Button
                     onPress={this.onPressPromiseExperimentButton}
                     title="Promise Experiment"
