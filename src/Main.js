@@ -19,12 +19,20 @@ class Main extends Component {
         this.props.navigation.navigate("PromiseExperiment", {})
     };
 
+    onPressPersistenceExperimentButton = () => {
+        this.props.navigation.navigate("PersistenceExperiment", {})
+    }
+
     render() {
         return (
             <View style={{ flex: 1, padding: 10 }}>
                 <Button
                     onPress={this.onPressHttpExperimentButton}
                     title="Http Experiment"
+                />
+                <Button
+                    onPress={this.onPressPersistenceExperimentButton}
+                    title="Persistence Experiment"
                 />
                 <Button
                     onPress={this.onPressPromiseExperimentButton}
