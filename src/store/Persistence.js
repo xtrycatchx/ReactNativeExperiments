@@ -1,25 +1,18 @@
 import { AsyncStorage } from 'react-native';
 
-createData = (id, data) => {
-    return await AsyncStorage.setItem(`@SamplePersistence:${id}`, data);
-}
+const createData = (id, data) => AsyncStorage.setItem(`@SamplePersistence:${id}`, data);
 
-readData = id => {
-    return await AsyncStorage.getItem(`@SamplePersistence:${id}`);
-}
+const readData = id => AsyncStorage.getItem(`@SamplePersistence:${id}`);
 
-updateData = (id, data) => {
+const updateData = (id, data) => {
     let updatedData = readData(id);
     updatedData = data;
-    return await AsyncStorage.setItem(`@SamplePersistence:${id}`, updatedData);
+    return AsyncStorage.setItem(`@SamplePersistence:${id}`, updatedData);
 }
 
-deleteData = id => {
-    AsyncStorage.removeItem(`@SamplePersistence:${id}`);
-}
+const deleteData = id => AsyncStorage.removeItem(`@SamplePersistence:${id}`);
 
-exports.create = createData;
-exports.read = readData;
-
-exports.update = updateData;
-exports.delete = deleteData;
+exports.createRecord = createData;
+exports.readRecord = readData;
+exports.updateRecord = updateData;
+exports.deleteRecord = deleteData;
