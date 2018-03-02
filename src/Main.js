@@ -23,6 +23,10 @@ class Main extends Component {
         this.props.navigation.navigate("PersistenceExperiment", {})
     }
 
+    onPressNativeUIExperimentButton = () => {
+        this.props.navigation.navigate("PersistenceExperiment", {})
+    }
+
     render() {
         return (
             <View style={{ flex: 1, padding: 10 }}>
@@ -37,6 +41,11 @@ class Main extends Component {
                 <Button
                     onPress={this.onPressPromiseExperimentButton}
                     title="Promise Experiment"
+                />
+
+                <Button
+                    onPress={this.onPressPromiseExperimentButton}
+                    title="Native UI Experiment"
                 />
             </View>
         );
