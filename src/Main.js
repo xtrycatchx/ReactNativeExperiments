@@ -24,7 +24,7 @@ class Main extends Component {
     }
 
     onPressNativeUIExperimentButton = () => {
-        this.props.navigation.navigate("PersistenceExperiment", {})
+        this.props.navigation.navigate("NativeUIExperiment", {})
     }
 
     render() {
@@ -44,7 +44,7 @@ class Main extends Component {
                 />
 
                 <Button
-                    onPress={this.onPressPromiseExperimentButton}
+                    onPress={this.onPressNativeUIExperimentButton}
                     title="Native UI Experiment"
                 />
             </View>

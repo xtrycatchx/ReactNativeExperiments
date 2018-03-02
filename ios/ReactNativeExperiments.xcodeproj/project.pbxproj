@@ -37,6 +37,8 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9B1410F62046530500312886 /* PromiseExperiment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1410F52046530500312886 /* PromiseExperiment.m */; };
+		9B1615A620491A1400221C17 /* UglySquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1615A220491A1400221C17 /* UglySquare.m */; };
+		9B1615A720491A1400221C17 /* UglySquareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1615A420491A1400221C17 /* UglySquareManager.m */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -344,6 +346,10 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9B1410F4204652DF00312886 /* PromiseExperiment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromiseExperiment.h; sourceTree = "<group>"; };
 		9B1410F52046530500312886 /* PromiseExperiment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromiseExperiment.m; sourceTree = "<group>"; };
+		9B1615A220491A1400221C17 /* UglySquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UglySquare.m; sourceTree = "<group>"; };
+		9B1615A320491A1400221C17 /* UglySquareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UglySquareManager.h; sourceTree = "<group>"; };
+		9B1615A420491A1400221C17 /* UglySquareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UglySquareManager.m; sourceTree = "<group>"; };
+		9B1615A520491A1400221C17 /* UglySquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UglySquare.h; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -600,6 +606,10 @@
 		9B1410F3204652B200312886 /* experiments */ = {
 			isa = PBXGroup;
 			children = (
+				9B1615A520491A1400221C17 /* UglySquare.h */,
+				9B1615A220491A1400221C17 /* UglySquare.m */,
+				9B1615A320491A1400221C17 /* UglySquareManager.h */,
+				9B1615A420491A1400221C17 /* UglySquareManager.m */,
 				9B1410F4204652DF00312886 /* PromiseExperiment.h */,
 				9B1410F52046530500312886 /* PromiseExperiment.m */,
 			);
@@ -1130,7 +1140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				9B1615A620491A1400221C17 /* UglySquare.m in Sources */,
 				9B1410F62046530500312886 /* PromiseExperiment.m in Sources */,
+				9B1615A720491A1400221C17 /* UglySquareManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
