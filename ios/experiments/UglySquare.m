@@ -38,4 +38,24 @@
   
 }
 
+- (void)setBatmanMessage:(NSString *)batmanMessage
+{
+  if(![batmanMessage isEqual:_batmanMessage])
+  {
+    _batmanMessage = [batmanMessage copy];
+    [self addTextView: _batmanMessage];
+  }
+}
+
+- (void)addTextView:(NSString *) text
+{
+  UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0,100,100)];
+  textLabel.text = text;
+  textLabel.textColor = [UIColor whiteColor];
+  [textLabel sizeToFit];
+  [_childView addSubview:textLabel];
+  [_childView setNeedsDisplay];
+  
+}
+
 @end

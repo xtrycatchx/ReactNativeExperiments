@@ -27,7 +27,7 @@ RCT_EXPORT_MODULE();
   return [[UglySquare alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
 }
 
-RCT_EXPORT_VIEW_PROPERTY(exampleProp, NSString)
+RCT_EXPORT_VIEW_PROPERTY(batmanMessage, NSString)
 
 // Export constants
 // https://facebook.github.io/react-native/releases/next/docs/native-modules-ios.html#exporting-constants
