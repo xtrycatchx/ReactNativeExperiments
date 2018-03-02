@@ -18,7 +18,22 @@ class PersistenceExperiment extends Component {
 
                 <Button
                     onPress={this.onDoSomething}
-                    title='Do something'
+                    title='Create'
+                />
+
+                <Button
+                    onPress={this.onDoSomething}
+                    title='Read'
+                />
+
+                <Button
+                    onPress={this.onDoSomething}
+                    title='Update'
+                />
+
+                <Button
+                    onPress={this.onDoSomething}
+                    title='Delete'
                 />
 
             </View>
