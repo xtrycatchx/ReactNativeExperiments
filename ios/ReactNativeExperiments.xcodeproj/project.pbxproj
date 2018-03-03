@@ -350,6 +350,7 @@
 		9B1615A320491A1400221C17 /* UglySquareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UglySquareManager.h; sourceTree = "<group>"; };
 		9B1615A420491A1400221C17 /* UglySquareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UglySquareManager.m; sourceTree = "<group>"; };
 		9B1615A520491A1400221C17 /* UglySquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UglySquare.h; sourceTree = "<group>"; };
+		9BD1FE16204AEFE7008C71EE /* HorribleCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorribleCircle.h; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -612,6 +613,7 @@
 				9B1615A420491A1400221C17 /* UglySquareManager.m */,
 				9B1410F4204652DF00312886 /* PromiseExperiment.h */,
 				9B1410F52046530500312886 /* PromiseExperiment.m */,
+				9BD1FE16204AEFE7008C71EE /* HorribleCircle.h */,
 			);
 			path = experiments;
 			sourceTree = "<group>";
