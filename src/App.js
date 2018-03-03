@@ -5,6 +5,7 @@ import PromiseExperiment from './experiments/PromiseExperiment'
 import PersistenceExperiment from './experiments/PersistenceExperiment'
 import HttpExperiment from './experiments/HttpExperiment'
 import NativeUIExperiment from './experiments/NativeUIExperiment'
+import NativeEventsExperiment from './experiments/NativeEventsExperiment'
 
 const Navigation = StackNavigator({
     Main: { screen: Main },
@@ -12,6 +13,7 @@ const Navigation = StackNavigator({
     PersistenceExperiment: { screen: PersistenceExperiment },
     HttpExperiment: { screen: HttpExperiment },
     NativeUIExperiment: { screen: NativeUIExperiment },
+    NativeEventsExperiment: { screen: NativeEventsExperiment}
 });
 
 class App extends Component {

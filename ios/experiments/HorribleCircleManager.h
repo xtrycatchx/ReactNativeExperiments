@@ -4,7 +4,6 @@
 //
 //  Created by Paul Sydney on 3/3/18.
 //
-
 #if __has_include(<React/RCTViewManager.h>)
 #import <React/RCTViewManager.h>
 #elif __has_include(“RCTViewManager.h”)
