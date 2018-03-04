@@ -42,6 +42,7 @@
 		9BD1FE3D204AF094008C71EE /* HorribleCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1FE3C204AF094008C71EE /* HorribleCircle.m */; };
 		9BD1FE40204AF20F008C71EE /* HorribleCircleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1FE3F204AF20F008C71EE /* HorribleCircleManager.m */; };
 		9BD1FE43204AF5E3008C71EE /* EventTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1FE42204AF5E3008C71EE /* EventTest.m */; };
+		9BD1FE4D204BCC7B008C71EE /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD1FE4A204BCC31008C71EE /* libRCTPushNotification.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -312,6 +313,20 @@
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
 		};
+		9BD1FE49204BCC31008C71EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BD1FE44204BCC30008C71EE /* RCTPushNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTPushNotification;
+		};
+		9BD1FE4B204BCC31008C71EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BD1FE44204BCC30008C71EE /* RCTPushNotification.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D05745F1DE6004600184BB4;
+			remoteInfo = "RCTPushNotification-tvOS";
+		};
 		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -359,6 +374,7 @@
 		9BD1FE3F204AF20F008C71EE /* HorribleCircleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorribleCircleManager.m; sourceTree = "<group>"; };
 		9BD1FE41204AF5B1008C71EE /* EventTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTest.h; sourceTree = "<group>"; };
 		9BD1FE42204AF5E3008C71EE /* EventTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventTest.m; sourceTree = "<group>"; };
+		9BD1FE44204BCC30008C71EE /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -375,6 +391,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD1FE4D204BCC7B008C71EE /* libRCTPushNotification.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -562,6 +579,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9BD1FE44204BCC30008C71EE /* RCTPushNotification.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -629,6 +647,15 @@
 				9BD1FE42204AF5E3008C71EE /* EventTest.m */,
 			);
 			path = experiments;
+			sourceTree = "<group>";
+		};
+		9BD1FE45204BCC30008C71EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BD1FE4A204BCC31008C71EE /* libRCTPushNotification.a */,
+				9BD1FE4C204BCC31008C71EE /* libRCTPushNotification-tvOS.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		ADBDB9201DFEBF0600ED6528 /* Products */ = {
@@ -782,6 +809,10 @@
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
 					ProjectRef = 00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 9BD1FE45204BCC30008C71EE /* Products */;
+					ProjectRef = 9BD1FE44204BCC30008C71EE /* RCTPushNotification.xcodeproj */;
 				},
 				{
 					ProductGroup = 139105B71AF99BAD00B5F7CC /* Products */;
@@ -1065,6 +1096,20 @@
 			fileType = archive.ar;
 			path = "libprivatedata-tvOS.a";
 			remoteRef = 9B1410F0204649CC00312886 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9BD1FE4A204BCC31008C71EE /* libRCTPushNotification.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTPushNotification.a;
+			remoteRef = 9BD1FE49204BCC31008C71EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9BD1FE4C204BCC31008C71EE /* libRCTPushNotification-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTPushNotification-tvOS.a";
+			remoteRef = 9BD1FE4B204BCC31008C71EE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {

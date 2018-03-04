@@ -10,6 +10,7 @@
     "react": "16.2.0",
     "react-native": "0.53.3",
     "react-native-create-bridge": "^2.0.1",
+    "react-native-push-notification": "^3.0.2",
     "react-navigation": "^1.2.1"
   },
   "devDependencies": {
