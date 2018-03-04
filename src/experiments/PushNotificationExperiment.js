@@ -26,7 +26,7 @@ class PushNotificationExperiment extends Component {
             let date = new Date(Date.now() + (this.state.seconds * 1000));
 
             if (Platform.OS === 'ios') {
-                date = date.toISOString();
+                //date = date.toISOString();
             }
 
             PushNotification.localNotificationSchedule({

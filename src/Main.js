@@ -31,6 +31,10 @@ class Main extends Component {
         this.props.navigation.navigate("NativeEventsExperiment", {})
     }
 
+    onPressPushNotificationExperimentButton = () => {
+        this.props.navigation.navigate("PushNotificationExperiment", {})
+    }
+
     render() {
         return (
             <View style={{ flex: 1, padding: 10 }}>
@@ -48,12 +52,17 @@ class Main extends Component {
                 />
 
                 <Button
-                onPress={this.onPressNativeUIExperimentButton}
-                title="Native UI Experiment"
-            />
-            <Button
+                    onPress={this.onPressNativeUIExperimentButton}
+                    title="Native UI Experiment"
+                />
+                <Button
                     onPress={this.onPressNativeEventsExperimentButton}
                     title="Native Events Experiment"
+                />
+
+                <Button
+                    onPress={this.onPressPushNotificationExperimentButton}
+                    title="Push Notification Experiment"
                 />
             </View>
         );
