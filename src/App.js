@@ -6,6 +6,7 @@ import PersistenceExperiment from './experiments/PersistenceExperiment'
 import HttpExperiment from './experiments/HttpExperiment'
 import NativeUIExperiment from './experiments/NativeUIExperiment'
 import NativeEventsExperiment from './experiments/NativeEventsExperiment'
+import PushNotificationExperiment from './experiments/PushNotificationExperiment'
 
 const Navigation = StackNavigator({
     Main: { screen: Main },
@@ -13,7 +14,8 @@ const Navigation = StackNavigator({
     PersistenceExperiment: { screen: PersistenceExperiment },
     HttpExperiment: { screen: HttpExperiment },
     NativeUIExperiment: { screen: NativeUIExperiment },
-    NativeEventsExperiment: { screen: NativeEventsExperiment}
+    NativeEventsExperiment: { screen: NativeEventsExperiment},
+    PushNotificationExperiment: { screen: PushNotificationExperiment}
 });
 
 class App extends Component {
