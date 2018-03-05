@@ -39,6 +39,8 @@
 		9B1410F62046530500312886 /* PromiseExperiment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1410F52046530500312886 /* PromiseExperiment.m */; };
 		9B1615A620491A1400221C17 /* UglySquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1615A220491A1400221C17 /* UglySquare.m */; };
 		9B1615A720491A1400221C17 /* UglySquareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1615A420491A1400221C17 /* UglySquareManager.m */; };
+		9B9ACCA1204D808E000DA744 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9ACC9F204D808E000DA744 /* SampleViewController.m */; };
+		9B9ACCA2204D808E000DA744 /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9ACCA0204D808E000DA744 /* SampleViewController.xib */; };
 		9BD1FE3D204AF094008C71EE /* HorribleCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1FE3C204AF094008C71EE /* HorribleCircle.m */; };
 		9BD1FE40204AF20F008C71EE /* HorribleCircleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1FE3F204AF20F008C71EE /* HorribleCircleManager.m */; };
 		9BD1FE43204AF5E3008C71EE /* EventTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1FE42204AF5E3008C71EE /* EventTest.m */; };
@@ -368,6 +370,9 @@
 		9B1615A320491A1400221C17 /* UglySquareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UglySquareManager.h; sourceTree = "<group>"; };
 		9B1615A420491A1400221C17 /* UglySquareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UglySquareManager.m; sourceTree = "<group>"; };
 		9B1615A520491A1400221C17 /* UglySquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UglySquare.h; sourceTree = "<group>"; };
+		9B9ACC9E204D808E000DA744 /* SampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		9B9ACC9F204D808E000DA744 /* SampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		9B9ACCA0204D808E000DA744 /* SampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 		9BD1FE16204AEFE7008C71EE /* HorribleCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorribleCircle.h; sourceTree = "<group>"; };
 		9BD1FE3C204AF094008C71EE /* HorribleCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorribleCircle.m; sourceTree = "<group>"; };
 		9BD1FE3E204AF1C4008C71EE /* HorribleCircleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorribleCircleManager.h; sourceTree = "<group>"; };
@@ -645,6 +650,9 @@
 				9BD1FE3F204AF20F008C71EE /* HorribleCircleManager.m */,
 				9BD1FE41204AF5B1008C71EE /* EventTest.h */,
 				9BD1FE42204AF5E3008C71EE /* EventTest.m */,
+				9B9ACC9E204D808E000DA744 /* SampleViewController.h */,
+				9B9ACC9F204D808E000DA744 /* SampleViewController.m */,
+				9B9ACCA0204D808E000DA744 /* SampleViewController.xib */,
 			);
 			path = experiments;
 			sourceTree = "<group>";
@@ -1134,6 +1142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9B9ACCA2204D808E000DA744 /* SampleViewController.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1207,6 +1216,7 @@
 				9BD1FE40204AF20F008C71EE /* HorribleCircleManager.m in Sources */,
 				9BD1FE3D204AF094008C71EE /* HorribleCircle.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				9B9ACCA1204D808E000DA744 /* SampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
