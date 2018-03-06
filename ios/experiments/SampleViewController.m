@@ -9,6 +9,7 @@
 #import "SampleViewController.h"
 
 @interface SampleViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -22,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)clickExit:(id)sender {
+    [self dismissViewControllerAnimated:NO completion:^{
+        //kill this native view
+    }];
 }
 
 /*
