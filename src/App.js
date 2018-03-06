@@ -7,6 +7,7 @@ import HttpExperiment from './experiments/HttpExperiment'
 import NativeUIExperiment from './experiments/NativeUIExperiment'
 import NativeEventsExperiment from './experiments/NativeEventsExperiment'
 import PushNotificationExperiment from './experiments/PushNotificationExperiment'
+import RnOpenNativeViewController from './native/RnOpenNativeViewController'
 
 const Navigation = StackNavigator({
     Main: { screen: Main },
@@ -15,7 +16,8 @@ const Navigation = StackNavigator({
     HttpExperiment: { screen: HttpExperiment },
     NativeUIExperiment: { screen: NativeUIExperiment },
     NativeEventsExperiment: { screen: NativeEventsExperiment},
-    PushNotificationExperiment: { screen: PushNotificationExperiment}
+    PushNotificationExperiment: { screen: PushNotificationExperiment},
+    RnOpenNativeViewController: { screen: RnOpenNativeViewController}
 });
 
 class App extends Component {
