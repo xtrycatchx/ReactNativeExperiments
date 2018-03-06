@@ -11,7 +11,6 @@
 
 @interface SampleViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *camera;
 @property (strong, nonatomic) RCTEventDispatcher *_eventDispatcher;
 
 @end
