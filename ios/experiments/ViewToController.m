@@ -6,6 +6,7 @@
 //
 #import <Foundation/Foundation.h>
 #import "ViewToController.h"
+#import "SampleViewController.h"
 
 // import RCTEventDispatcher
 #if __has_include(<React/RCTEventDispatcher.h>)
@@ -27,7 +28,19 @@
   [super didMoveToWindow];
   if( self.window) {
     // TODO
-    [_eventDispatcher sendAppEventWithName:@"onLoaded" body:@{@"name": @"onStop"}];
+    
+    SampleViewController *sampleViewController = [[SampleViewController alloc] initWithNibName:@"SampleViewController" bundle:nil];
+    [sampleViewController set_eventDispatcher:_eventDispatcher];
+    [self.window.rootViewController presentViewController:sampleViewController animated:NO completion:^{
+      NSLog(@"Done");
+      //self.window.rootViewController.reactview.appProperties = @{@"status": @"DONE"};
+      //[self sendEventWithName:@"sayHello" body:@"Hello"];
+      
+      [_eventDispatcher sendAppEventWithName:@"onLoaded" body:@{@"name": @"onStop"}];
+      
+      
+      
+    }];
     
     // end of TODO
   }
