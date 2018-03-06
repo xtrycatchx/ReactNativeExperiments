@@ -367,6 +367,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9B014922204EEC1000883280 /* ViewToController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewToController.h; sourceTree = "<group>"; };
 		9B01494A204EEC8600883280 /* ViewToController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewToController.m; sourceTree = "<group>"; };
+		9B01494C204EED3500883280 /* ViewToControllerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewToControllerManager.h; sourceTree = "<group>"; };
 		9B1410F4204652DF00312886 /* PromiseExperiment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromiseExperiment.h; sourceTree = "<group>"; };
 		9B1410F52046530500312886 /* PromiseExperiment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromiseExperiment.m; sourceTree = "<group>"; };
 		9B1615A220491A1400221C17 /* UglySquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UglySquare.m; sourceTree = "<group>"; };
@@ -658,6 +659,7 @@
 				9B9ACCA0204D808E000DA744 /* SampleViewController.xib */,
 				9B014922204EEC1000883280 /* ViewToController.h */,
 				9B01494A204EEC8600883280 /* ViewToController.m */,
+				9B01494C204EED3500883280 /* ViewToControllerManager.h */,
 			);
 			path = experiments;
 			sourceTree = "<group>";

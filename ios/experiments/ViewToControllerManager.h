@@ -3,11 +3,17 @@
 //  ReactNativeExperiments
 //
 //  Created by Paul Sydney on 6/3/18.
-//  Copyright © 2018 Facebook. All rights reserved.
 //
+#if __has_include(<React/RCTViewManager.h>)
+#import <React/RCTViewManager.h>
+#elif __has_include(“RCTViewManager.h”)
+#import “RCTViewManager.h”
+#else
+#import “React/RCTViewManager.h” // Required when used as a Pod in a Swift project
+#endif
 
-#ifndef ViewToControllerManager_h
-#define ViewToControllerManager_h
+// Subclass your view manager off the RCTViewManager
+// http://facebook.github.io/react-native/docs/native-components-ios.html#ios-mapview-example
+@interface ViewToControllerManager : RCTViewManager
 
-
-#endif /* ViewToControllerManager_h */
+@end
