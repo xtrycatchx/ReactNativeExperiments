@@ -35,6 +35,10 @@ class Main extends Component {
         this.props.navigation.navigate("PushNotificationExperiment", {})
     }
 
+    onPressOpenNativeViewControllerButton = () => {
+        this.props.navigation.navigate("RnOpenNativeViewController", {})
+    }
+
     render() {
         return (
             <View style={{ flex: 1, padding: 10 }}>
@@ -63,6 +67,11 @@ class Main extends Component {
                 <Button
                     onPress={this.onPressPushNotificationExperimentButton}
                     title="Push Notification Experiment"
+                />
+
+                <Button
+                    onPress={this.onPressOpenNativeViewControllerButton}
+                    title="Open a Native View Controller"
                 />
             </View>
         );
