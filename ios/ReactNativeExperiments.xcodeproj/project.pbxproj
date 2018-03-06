@@ -37,6 +37,7 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9B01494B204EEC8600883280 /* ViewToController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B01494A204EEC8600883280 /* ViewToController.m */; };
+		9B01494E204EEDA200883280 /* ViewToControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B01494D204EEDA200883280 /* ViewToControllerManager.m */; };
 		9B1410F62046530500312886 /* PromiseExperiment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1410F52046530500312886 /* PromiseExperiment.m */; };
 		9B1615A620491A1400221C17 /* UglySquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1615A220491A1400221C17 /* UglySquare.m */; };
 		9B1615A720491A1400221C17 /* UglySquareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1615A420491A1400221C17 /* UglySquareManager.m */; };
@@ -368,6 +369,7 @@
 		9B014922204EEC1000883280 /* ViewToController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewToController.h; sourceTree = "<group>"; };
 		9B01494A204EEC8600883280 /* ViewToController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewToController.m; sourceTree = "<group>"; };
 		9B01494C204EED3500883280 /* ViewToControllerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewToControllerManager.h; sourceTree = "<group>"; };
+		9B01494D204EEDA200883280 /* ViewToControllerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewToControllerManager.m; sourceTree = "<group>"; };
 		9B1410F4204652DF00312886 /* PromiseExperiment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromiseExperiment.h; sourceTree = "<group>"; };
 		9B1410F52046530500312886 /* PromiseExperiment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromiseExperiment.m; sourceTree = "<group>"; };
 		9B1615A220491A1400221C17 /* UglySquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UglySquare.m; sourceTree = "<group>"; };
@@ -660,6 +662,7 @@
 				9B014922204EEC1000883280 /* ViewToController.h */,
 				9B01494A204EEC8600883280 /* ViewToController.m */,
 				9B01494C204EED3500883280 /* ViewToControllerManager.h */,
+				9B01494D204EEDA200883280 /* ViewToControllerManager.m */,
 			);
 			path = experiments;
 			sourceTree = "<group>";
@@ -1222,6 +1225,7 @@
 				9B1615A720491A1400221C17 /* UglySquareManager.m in Sources */,
 				9B01494B204EEC8600883280 /* ViewToController.m in Sources */,
 				9BD1FE40204AF20F008C71EE /* HorribleCircleManager.m in Sources */,
+				9B01494E204EEDA200883280 /* ViewToControllerManager.m in Sources */,
 				9BD1FE3D204AF094008C71EE /* HorribleCircle.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				9B9ACCA1204D808E000DA744 /* SampleViewController.m in Sources */,
