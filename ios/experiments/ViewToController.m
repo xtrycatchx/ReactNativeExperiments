@@ -27,26 +27,16 @@
 {
   [super didMoveToWindow];
   if( self.window) {
-    // TODO
-    
     SampleViewController *sampleViewController = [[SampleViewController alloc] initWithNibName:@"SampleViewController" bundle:nil];
     [sampleViewController set_eventDispatcher:_eventDispatcher];
     [self.window.rootViewController presentViewController:sampleViewController animated:NO completion:^{
       NSLog(@"Done");
-      //self.window.rootViewController.reactview.appProperties = @{@"status": @"DONE"};
-      //[self sendEventWithName:@"sayHello" body:@"Hello"];
       
       [_eventDispatcher sendAppEventWithName:@"onLoaded" body:@{@"name": @"onStop"}];
       
-      
-      
     }];
-    
-    // end of TODO
   }
 }
-
-
 
 - (instancetype)initWithEventDispatcher:(RCTEventDispatcher *)eventDispatcher
 {
