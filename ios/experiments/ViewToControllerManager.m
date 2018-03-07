@@ -8,24 +8,20 @@
 #import "ViewToController.h"
 #import "ViewToControllerManager.h"
 
-// import RCTBridge
 #if __has_include(<React/RCTBridge.h>)
 #import <React/RCTBridge.h>
 #elif __has_include(“RCTBridge.h”)
 #import “RCTBridge.h”
 #else
-#import “React/RCTBridge.h” // Required when used as a Pod in a Swift project
+#import “React/RCTBridge.h”
 #endif
 
 @implementation ViewToControllerManager
 
 @synthesize bridge = _bridge;
 
-// Export a native module
-// https://facebook.github.io/react-native/docs/native-modules-ios.html
 RCT_EXPORT_MODULE();
 
-// Return the native view that represents your React component
 - (UIView *)view
 {
   return [[ViewToController alloc] initWithEventDispatcher:self.bridge.eventDispatcher];
@@ -33,13 +29,9 @@ RCT_EXPORT_MODULE();
 
 RCT_EXPORT_VIEW_PROPERTY(batmanMessage, NSString)
 
-// Export constants
-// https://facebook.github.io/react-native/releases/next/docs/native-modules-ios.html#exporting-constants
 - (NSDictionary *)constantsToExport
 {
-  return @{
-           @"EXAMPLE": @"example"
-           };
+  return @{@"EXAMPLE": @"example"};
 }
 
 @end
