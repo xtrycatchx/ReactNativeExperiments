@@ -9,8 +9,7 @@
 #define EventTest_h
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
-#endif /* EventTest_h */
+#endif
 
 @interface EventTest : RCTEventEmitter <RCTBridgeModule>
-
 @end
