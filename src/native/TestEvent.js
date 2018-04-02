@@ -10,19 +10,14 @@ export default class TestEvent extends Component {
         super(props);
     }
 
-    subscription = () => {
-        return eventTestEmitter.addListener(
-            'EventReminder',
-            (reminder) => AlertIOS.alert(`Experiment RN ${reminder.name}`)
-        )
-    }
+    subscription = () => eventTestEmitter.addListener(
+        'EventReminder',
+        (reminder) => AlertIOS.alert(`Experiment RN ${reminder.name}`)
+    )
 
-    componentWillUnmount() {
-        subscription.remove();
-    }
-    render() {
-        return <Text>Wait ...</Text>
-    }
+    componentWillUnmount = () => subscription.remove();
+
+    render = () => <Text>Wait ...</Text>
 }
 
 
