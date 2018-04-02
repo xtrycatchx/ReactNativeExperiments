@@ -15,18 +15,14 @@ const Navigation = StackNavigator({
     PersistenceExperiment: { screen: PersistenceExperiment },
     HttpExperiment: { screen: HttpExperiment },
     NativeUIExperiment: { screen: NativeUIExperiment },
-    NativeEventsExperiment: { screen: NativeEventsExperiment},
-    PushNotificationExperiment: { screen: PushNotificationExperiment},
-    RnOpenNativeViewController: { screen: RnOpenNativeViewController}
+    NativeEventsExperiment: { screen: NativeEventsExperiment },
+    PushNotificationExperiment: { screen: PushNotificationExperiment },
+    RnOpenNativeViewController: { screen: RnOpenNativeViewController }
 });
 
 class App extends Component {
 
-    render() {
-        return (
-            <Navigation />
-        );
-    }
+    render = () => <Navigation />
 
 }
 
