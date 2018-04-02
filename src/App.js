@@ -21,9 +21,7 @@ const Navigation = StackNavigator({
 });
 
 class App extends Component {
-
     render = () => <Navigation />
-
 }
 
 export default App
