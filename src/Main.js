@@ -39,6 +39,10 @@ class Main extends Component {
         this.props.navigation.navigate("RnOpenNativeViewController", {})
     }
 
+    onPressOpenScrollViewExperiment = () => {
+        this.props.navigation.navigate("ScrollExperiment", {})
+    };
+
     render() {
         return (
             <View style={{ flex: 1, padding: 10 }}>
@@ -72,6 +76,11 @@ class Main extends Component {
                 <Button
                     onPress={this.onPressOpenNativeViewControllerButton}
                     title="Open a Native View Controller"
+                />
+
+                <Button
+                    onPress={this.onPressOpenScrollViewExperiment}
+                    title="ScrollView Experiment"
                 />
             </View>
         );
